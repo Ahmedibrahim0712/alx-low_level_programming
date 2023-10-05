@@ -1,16 +1,10 @@
 #include <unistd.h>
-
+/**
+ 	* main - this prints exactly the input on it
+ * Return: always 1.
+ */
 int main(void)
 {
-    char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-    ssize_t len = 59;
-
-    // Use the write system call to print the message to stderr (file descriptor 2)
-    if (write(2, message, len) != len)
-    {
-        // Error handling if write fails
-        return 1;
-    }
-
-    return 1;
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
