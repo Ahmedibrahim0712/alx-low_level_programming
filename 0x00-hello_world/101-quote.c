@@ -1,8 +1,8 @@
 #include <unistd.h>
 
 /**
- * main - This prints exactly the input on it.
- *
+ * main - Entry point
+ * 
  * description: using write function to print a quote
  * 		write(int fd,const void *buf,size_t count)
  * 
@@ -10,11 +10,7 @@
  */
 int main(void)
 {
-	char quo [] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	ssize_t len = 59;
-
-	if (write(1, quo, len, 59);
-
+	char quo[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	(write(1, quo, 59);
 		return (1);
-	
 }
